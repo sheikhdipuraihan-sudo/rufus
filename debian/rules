@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod 0755 debian/rufus-linux/opt/rufus-linux/rufus_launcher.sh
+	chmod 0755 debian/rufus-linux/opt/rufus-linux/usr/bin/rufus_linux.py

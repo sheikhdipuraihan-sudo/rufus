@@ -1,0 +1,15 @@
+Source: rufus-linux
+Section: utils
+Priority: optional
+Maintainer: Rufus Linux Port Team <noreply@example.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: rufus-linux
+Architecture: amd64
+Depends: ${misc:Depends}, python3, python3-pip, python3-tk, python3-venv,
+ dosfstools, ntfs-3g, e2fsprogs, util-linux, policykit-1
+Description: Create bootable USB drives (Native Linux Port)
+ A native Linux port of Rufus with the exact same UI and functionality.
+ Installs a desktop entry and launcher for root access.

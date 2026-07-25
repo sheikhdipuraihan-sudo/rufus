@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "configure" ]; then
+    if ! python3 -c "import customtkinter" 2>/dev/null; then
+        echo "rufus-linux: installing customtkinter (not available as a .deb)..."
+        pip3 install --break-system-packages customtkinter >/dev/null 2>&1 || \
+            pip3 install customtkinter >/dev/null 2>&1 || \
+            echo "rufus-linux: WARNING: failed to install customtkinter automatically." \
+                 "Run: pip3 install --break-system-packages customtkinter" >&2
+    fi
+fi
+
+#DEBHELPER#
+
+exit 0

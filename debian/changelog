@@ -1,0 +1,5 @@
+rufus-linux (4.4-1) unstable; urgency=medium
+
+  * Initial release: native Linux port of Rufus with dd/mkfs backend.
+
+ -- Rufus Linux Port Team <noreply@example.com>  Sat, 25 Jul 2026 00:00:00 +0000
