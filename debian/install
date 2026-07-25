@@ -1,3 +1,0 @@
-src/rufus_linux.py opt/rufus-linux/usr/bin/
-linux-packaging/rufus_launcher.sh opt/rufus-linux/
-linux-packaging/rufus.desktop usr/share/applications/
